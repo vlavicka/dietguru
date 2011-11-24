@@ -2,25 +2,27 @@
 DietGuru requirements
 =====================
 
-.. contents::
-
-
-Main goal
-=========
-
-Create application that allows user to keep records about its diet program.
+Diet Guru is a system that allows user to make notes about its diet program.
 
 
 User stories
 ============
 
-- as **USER** I want to **CREATE REGIMEN LOG** so I can **FOLLOW DIET PROGRAM**
-- as **USER** I want to **CREATE MEAL** so I can **USE IT IN REGIME LOG**
-- as **USER** I want to **INSERT FOODSTUFF INTO MEAL** so I can **GET MEAL STRUCTURE AND NUTRITION VALUES**
-- as **USER** I want to **DELETE MEAL** so I can **NO LONGER USE IT**
-- as **USER** I want to **INSERT MEAL INTO REGIMEN LOG** so I can **FROM DIET PROGRAM**
-- as **USER** I want to **CHECK MEAL IF IT IS CONSUMED** so I can **SEE DIET SUMMARY AND PROGRESS**
-- as **USER** I want to **ddd**
++------+------------------------------+-----------------------------------------+
+| As   | I want to                    | so I can                                |
++======+==============================+=========================================+
+| User | create regimen log           | follow diet program                     |
++------+------------------------------+-----------------------------------------+
+| User | create meal                  | use it in regime log                    |
++------+------------------------------+-----------------------------------------+
+| User | insert foodstuff into meal   | get meal structure and nutrition values |
++------+------------------------------+-----------------------------------------+
+| User | delete meal                  | no longer use it                        |
++------+------------------------------+-----------------------------------------+
+| User | insert meal into regimen log | from diet program                       |
++------+------------------------------+-----------------------------------------+
+| User | check meal if it is consumed | see diet summary and progress           |
++------+------------------------------+-----------------------------------------+
 
 
 Ideas
@@ -33,13 +35,13 @@ Ideas
 Acronyms and terms
 ==================
 
-**Regimen log**
+*Regimen log*
     daily based list of food
 
-**Diet program**
+*Diet program*
     time period when user is interested in his/hers diet (weight reduction, mass gain or weight preservation)
 
-**Glycemic index**
+*Glycemic index*
     the glycemic index, **GI** is a measure of the effects of carbohydrates on blood sugar levels. 
     Carbohydrates that break down quickly during digestion and release glucose rapidly into the 
     bloodstream have a high GI; carbohydrates that break down more slowly, releasing glucose more 
