@@ -12,17 +12,17 @@ User stories
 +----+---------+------------------------------+-----------------------------------------------+
 | No | As a/an | I want to                    | so that                                       |
 +====+=========+==============================+===============================================+
-| 1  | User    | create regimen log           | I can follow diet program                     |
+| 1  | user    | create regimen log           | I can follow diet program                     |
 +----+---------+------------------------------+-----------------------------------------------+
-| 2  | User    | create meal                  | I can use it in regime log                    |
+| 2  | user    | create meal                  | I can use it in regime log                    |
 +----+---------+------------------------------+-----------------------------------------------+
-| 3  | User    | insert foodstuff into meal   | I can get meal structure and nutrition values |
+| 3  | user    | insert foodstuff into meal   | I can get meal structure and nutrition values |
 +----+---------+------------------------------+-----------------------------------------------+
-| 4  | User    | delete meal                  | I can no longer use it                        |
+| 4  | user    | delete meal                  | I can no longer use it                        |
 +----+---------+------------------------------+-----------------------------------------------+
-| 5  | User    | insert meal into regimen log | I can remove it from diet program             |
+| 5  | user    | insert meal into regimen log | I can remove it from diet program             |
 +----+---------+------------------------------+-----------------------------------------------+
-| 6  | User    | check meal if it is consumed | I can see diet summary and progress           |
+| 6  | user    | check meal if it is consumed | I can see diet summary and progress           |
 +----+---------+------------------------------+-----------------------------------------------+
 
 
@@ -33,11 +33,11 @@ User stories elaboration
 
 << TODO >>
 
-| 2  | User    | create meal                  | I can use it in regime log                    |
-| 3  | User    | insert foodstuff into meal   | I can get meal structure and nutrition values |
-| 4  | User    | delete meal                  | I can no longer use it                        |
-| 5  | User    | insert meal into regimen log | I can remove it from diet program             |
-| 6  | User    | check meal if it is consumed | I can see diet summary and progress           |
+| 2  | user    | create meal                  | I can use it in regime log                    |
+| 3  | user    | insert foodstuff into meal   | I can get meal structure and nutrition values |
+| 4  | user    | delete meal                  | I can no longer use it                        |
+| 5  | user    | insert meal into regimen log | I can remove it from diet program             |
+| 6  | user    | check meal if it is consumed | I can see diet summary and progress           |
 
 
 
