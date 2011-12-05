@@ -10,8 +10,10 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
+   :numbered:
 
    docs/requirements
+   docs/terms
 
 Indices and tables
 ==================
