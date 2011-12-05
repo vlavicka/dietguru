@@ -5,35 +5,60 @@ DietGuru requirements
 Diet Guru is a system that allows user to make notes about its diet program.
 
 
+------------
 User stories
-============
+------------
 
-+------+------------------------------+-----------------------------------------+
-| As   | I want to                    | so I can                                |
-+======+==============================+=========================================+
-| User | create regimen log           | follow diet program                     |
-+------+------------------------------+-----------------------------------------+
-| User | create meal                  | use it in regime log                    |
-+------+------------------------------+-----------------------------------------+
-| User | insert foodstuff into meal   | get meal structure and nutrition values |
-+------+------------------------------+-----------------------------------------+
-| User | delete meal                  | no longer use it                        |
-+------+------------------------------+-----------------------------------------+
-| User | insert meal into regimen log | from diet program                       |
-+------+------------------------------+-----------------------------------------+
-| User | check meal if it is consumed | see diet summary and progress           |
-+------+------------------------------+-----------------------------------------+
-
-
-Ideas
------
-
-- visualize diet program progress
-- save regimen log
++----+---------+------------------------------+-----------------------------------------------+
+| No | As a/an | I want to                    | so that                                       |
++====+=========+==============================+===============================================+
+| 1  | User    | create regimen log           | I can follow diet program                     |
++----+---------+------------------------------+-----------------------------------------------+
+| 2  | User    | create meal                  | I can use it in regime log                    |
++----+---------+------------------------------+-----------------------------------------------+
+| 3  | User    | insert foodstuff into meal   | I can get meal structure and nutrition values |
++----+---------+------------------------------+-----------------------------------------------+
+| 4  | User    | delete meal                  | I can no longer use it                        |
++----+---------+------------------------------+-----------------------------------------------+
+| 5  | User    | insert meal into regimen log | I can remove it from diet program             |
++----+---------+------------------------------+-----------------------------------------------+
+| 6  | User    | check meal if it is consumed | I can see diet summary and progress           |
++----+---------+------------------------------+-----------------------------------------------+
 
 
+User stories elaboration
+------------------------
+
+.. rubric:: As a user I want to create regimen log so I can follow diet program
+
+<< TODO >>
+
+
+| 2  | User    | create meal                  | I can use it in regime log                    |
+| 3  | User    | insert foodstuff into meal   | I can get meal structure and nutrition values |
+| 4  | User    | delete meal                  | I can no longer use it                        |
+| 5  | User    | insert meal into regimen log | I can remove it from diet program             |
+| 6  | User    | check meal if it is consumed | I can see diet summary and progress           |
+
+
+
+
+
+
+
+---------
+
+----
+TODO
+----
+
+:TODO: visualize diet program progress
+:TODO: save regimen log
+
+
+------------------
 Acronyms and terms
-==================
+------------------
 
 *Regimen log*
     daily based list of food
