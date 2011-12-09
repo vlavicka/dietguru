@@ -29,6 +29,48 @@ function! RstFindUserStoryTable()
     return stories
 endfunction
 
+function! RstStoryFindElaboration()
+    " find story elaboration section - START + END
+    let processing_elaboration = 0
+    let dictionary = {}
+    let curr_story = ""
+    for i in range(line("$"))
+        let line = getline(i)
+        if match(line, "^.. STORY_ELABORATION$") != -1
+            let start_line_no = i
+            let processing_elaboration = 1
+            continue
+        elseif match(line, "^.. END_STORY_ELABORATION$") != -1
+            let end_line_no = i
+            let processing_elaboration = 0
+            break
+        endif
+        if processing_elaboration == 1
+            if match(line, '.. rubric:: As a\/[^\/]*$') != -1
+                let curr_story = substitute(line, '^.. rubric:: \(.*\)$', '\1', '')
+                let dictionary[curr_story] = []
+            elseif curr_story != ""
+                call add(dictionary[curr_story], line)
+            endif
+        endif
+    endfor
+    return dictionary
+endfunction
+
+function! RstStoryElaborate()
+    let stories = RstFindUserStoryTable()
+    let elaboration_lines = RstStoryFindElaboration()
+    for item in items(elaboration_lines)
+        echo '..rubric:: '.item[0]
+        echo join(item[1], "\n")
+        echo "\n"
+    endfor
+    for story in stories
+        echo story
+    endfor
+    
+endfunction
+
 function! RstParseUserStories()
     let line_no = line('.')
     echo 'Current line: '.line_no
@@ -53,5 +95,6 @@ function! RstParseUserStory(text)
 endfunction
 
 map <F5> :w<CR>:so myrst.vim<CR>:call RstParseUserStories()<CR>
-map <F6> :w<CR>:so myrst.vim<CR>:echo join(RstFindUserStoryTable(), "\n")<CR>
+"map <F6> :w<CR>:so myrst.vim<CR>:echo join(RstFindUserStoryTable(), "\n")<CR>
+map <F6> :w<CR>:so myrst.vim<CR>:call RstStoryElaborate()<CR>
 map <C-R>s :call RstParseUserStories()<CR>

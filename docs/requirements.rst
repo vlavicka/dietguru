@@ -28,20 +28,19 @@ User stories
 
 User stories elaboration
 ------------------------
+.. STORY_ELABORATION
 
-.. rubric:: As a user I want to create regimen log so I can follow diet program
+.. rubric:: As a/an user I want to create regimen log so I can follow diet program
 
 << TODO >>
 
-| 2  | user    | create meal                  | I can use it in regime log                    |
-| 3  | user    | insert foodstuff into meal   | I can get meal structure and nutrition values |
-| 4  | user    | delete meal                  | I can no longer use it                        |
-| 5  | user    | insert meal into regimen log | I can remove it from diet program             |
-| 6  | user    | check meal if it is consumed | I can see diet summary and progress           |
+
+.. rubric:: As a/an something
+
+<< TODO >> 
 
 
-
-
+.. END_STORY_ELABORATION
 
 ----
 TODO
