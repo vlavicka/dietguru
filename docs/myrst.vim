@@ -32,9 +32,7 @@ endfunction
 function! RstStoryFindElaboration()
     " find story elaboration section - START + END
     let processing_elaboration = 0
-    let dictionary = {}
-    let curr_story = ""
-    for i in range(line("$"))
+    let dictionary = {} let curr_story = "" for i in range(line("$"))
         let line = getline(i)
         if match(line, "^.. STORY_ELABORATION$") != -1
             let start_line_no = i
@@ -79,7 +77,6 @@ function! RstParseUserStories()
     echo RstParseUserStory(curr_line)
 endfunction
 
-
 function! RstParseUserStory(text)
     let items = []
     for item in split(a:text, '|')[1:]
@@ -93,6 +90,14 @@ function! RstParseUserStory(text)
     let result = join(items, ' ')
     return result
 endfunction
+
+function! RstUpdateUserStory()
+    let cur_line = line('.')
+    let new_text = RstParseUserStory(getline(cur_line))
+    call setline(cur_line, new_text)
+endfunction
+
+map <C-R>c :w<CR>:call RstUpdateUserStory()<CR>
 
 map <F5> :w<CR>:so myrst.vim<CR>:call RstParseUserStories()<CR>
 "map <F6> :w<CR>:so myrst.vim<CR>:echo join(RstFindUserStoryTable(), "\n")<CR>
