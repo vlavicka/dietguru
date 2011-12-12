@@ -25,19 +25,67 @@ User stories
 | 6  | user    | check meal if it is consumed | I can see diet summary and progress           |
 +----+---------+------------------------------+-----------------------------------------------+
 
+Roles
+-----
+
++------+-----------------------------+
+| Role | Description                 |
++======+=============================+
+| user | person who uses application |
++------+-----------------------------+
+
 
 User stories elaboration
 ------------------------
 .. STORY_ELABORATION
 
-.. rubric:: As a/an user I want to create regimen log so I can follow diet program
+.. rubric:: Story 1
+   
+**As a/an user I want to create regimen log so I can follow diet program**
+
+Regimen log should contain following information:
+
+- title that identify log
+- notes with usefull information about log
+- start date describes date when regimen log is valid
+
+
+.. rubric:: Story 2
+   
+**As a/an user I want to create meal so that I can use it in regime log**
 
 << TODO >>
 
 
-.. rubric:: As a/an something
+.. rubric:: Story 3
+   
+**As a/an user I want to insert foodstuff into meal so that I can get meal 
+structure and nutrition values**
 
-<< TODO >> 
+<< TODO >>
+
+
+.. rubric:: Story 4
+   
+**As a/an user I want to delete meal so that I can no longer use it**
+
+<< TODO >>
+
+
+.. rubric:: Story 5
+   
+**As a/an user I want to insert meal into regimen log so that I can remove it 
+from diet program**
+
+<< TODO >>
+
+
+.. rubric:: Story 6
+   
+**As a/an user I want to check meal if it is consumed so that I can see diet 
+summary and progress**
+
+<< TODO >>
 
 
 .. END_STORY_ELABORATION
