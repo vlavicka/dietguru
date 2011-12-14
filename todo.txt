@@ -2,4 +2,5 @@
 
 class RegimenLog
 - make all attributes private
-
+- implement date class
+- check whether start date is lower than end date

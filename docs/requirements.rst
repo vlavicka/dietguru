@@ -90,7 +90,11 @@ New created regimen log has mandatory and optional values::
     end_weigth    = <empty>
     notes         = <empty>
 
+.. rubric:: Notes
 
+Notes are implemented as text but in future they can be implemented as an 
+object with support for inserting and deleting notes. Date when note was 
+inserted can be also updated.
 
 
 
@@ -144,4 +148,5 @@ TODO
 
 :TODO: visualize diet program progress
 :TODO: save regimen log
-
+:TODO: when a user story is implemented than it should be checked that it is 
+       done. Use special character - checked.
