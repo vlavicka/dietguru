@@ -14,6 +14,8 @@ Contents:
 
    docs/requirements
    docs/terms
+   docs/worklog
+
 
 Indices and tables
 ==================
