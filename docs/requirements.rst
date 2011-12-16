@@ -9,22 +9,21 @@ Diet Guru is a system that allows user to make notes about its diet program.
 General user stories
 --------------------
 
-+----+---------+------------------------------+-----------------------------------------------+
-| No | As a/an | I want to                    | so that                                       |
-+====+=========+==============================+===============================================+
-| 1  | user    | create regimen log           | I can follow diet program                     |
-+----+---------+------------------------------+-----------------------------------------------+
-| 2  | user    | create meal                  | I can use it in regime log                    |
-+----+---------+------------------------------+-----------------------------------------------+
-| 3  | user    | insert foodstuff into meal   | I can get meal structure and nutrition values |
-+----+---------+------------------------------+-----------------------------------------------+
-| 4  | user    | delete meal                  | I can no longer use it                        |
-+----+---------+------------------------------+-----------------------------------------------+
-| 5  | user    | insert meal into regimen log | I can remove it from diet program             |
-+----+---------+------------------------------+-----------------------------------------------+
-| 6  | user    | check meal if it is consumed | I can see diet summary and progress           |
-+----+---------+------------------------------+-----------------------------------------------+
-
++----+---------+------------------------------+-----------------------------------------------+-----+
+| No | As a/an | I want to                    | so that                                       |     |
++====+=========+==============================+===============================================+=====+
+| 1  | user    | create regimen log           | I can follow diet program                     | |i| |
++----+---------+------------------------------+-----------------------------------------------+-----+
+| 2  | user    | create meal                  | I can use it in regime log                    | |n| |
++----+---------+------------------------------+-----------------------------------------------+-----+
+| 3  | user    | insert foodstuff into meal   | I can get meal structure and nutrition values | |n| |
++----+---------+------------------------------+-----------------------------------------------+-----+
+| 4  | user    | delete meal                  | I can no longer use it                        | |n| |
++----+---------+------------------------------+-----------------------------------------------+-----+
+| 5  | user    | insert meal into regimen log | I can remove it from diet program             | |n| |
++----+---------+------------------------------+-----------------------------------------------+-----+
+| 6  | user    | check meal if it is consumed | I can see diet summary and progress           | |n| |
++----+---------+------------------------------+-----------------------------------------------+-----+
 
 
 Roles
@@ -47,17 +46,24 @@ Story 1
    
 **As a/an user I want to create regimen log so I can follow diet program**
 
-+----+---------+--------------------------------------------+-----------------------------------------------------+
-| No | As a/an | I want to                                  | so that                                             |
-+====+=========+============================================+=====================================================+
-| a  | user    | specify time period for keeping log        | I can divide diet program into smaller pieces       |
-+----+---------+--------------------------------------------+-----------------------------------------------------+
-| b  | user    | write down notes about diet program course | I can use it as reference in future                 |
-+----+---------+--------------------------------------------+-----------------------------------------------------+
-| c  | user    | specify name and description               | I can differentiate between different regiment logs |
-+----+---------+--------------------------------------------+-----------------------------------------------------+
-| d  | user    | write down weight                          | I can follow success in loosing weight              |
-+----+---------+--------------------------------------------+-----------------------------------------------------+
++----+---------+--------------------------------------------+-----------------------------------------------------+-----+
+| No | As a/an | I want to                                  | so that                                             |     |
++====+=========+============================================+=====================================================+=====+
+| a  | user    | specify time period for keeping log        | I can divide diet program into smaller pieces       | |i| |
++----+---------+--------------------------------------------+-----------------------------------------------------+-----+
+| b  | user    | write down notes about diet program course | I can use it as reference in future                 | |i| |
++----+---------+--------------------------------------------+-----------------------------------------------------+-----+
+| c  | user    | specify name and description               | I can differentiate between different regiment logs | |i| |
++----+---------+--------------------------------------------+-----------------------------------------------------+-----+
+| d  | user    | write down weight                          | I can follow success in loosing weight              | |i| |
++----+---------+--------------------------------------------+-----------------------------------------------------+-----+
+| e  | user    | display regimen log                        | I can see its result                                | |n| |
++----+---------+--------------------------------------------+-----------------------------------------------------+-----+
+| f  | user    | input regimen log data via GUI             | I can have comfort while creating regimen log       | |n| |
++----+---------+--------------------------------------------+-----------------------------------------------------+-----+
+
+
+
 
 
 Regimen log contains information about diet program. It is time limited so the 
@@ -150,3 +156,7 @@ TODO
 :TODO: save regimen log
 :TODO: when a user story is implemented than it should be checked that it is 
        done. Use special character - checked.
+
+.. |d| image:: done.png
+.. |n| image:: new.png
+.. |i| image:: inprogr.png
