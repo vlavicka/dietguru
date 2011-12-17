@@ -46,22 +46,21 @@ Story 1
    
 **As a/an user I want to create regimen log so I can follow diet program**
 
-+----+---------+--------------------------------------------+-----------------------------------------------------+-----+
-| No | As a/an | I want to                                  | so that                                             |     |
-+====+=========+============================================+=====================================================+=====+
-| a  | user    | specify time period for keeping log        | I can divide diet program into smaller pieces       | |i| |
-+----+---------+--------------------------------------------+-----------------------------------------------------+-----+
-| b  | user    | write down notes about diet program course | I can use it as reference in future                 | |i| |
-+----+---------+--------------------------------------------+-----------------------------------------------------+-----+
-| c  | user    | specify name and description               | I can differentiate between different regiment logs | |i| |
-+----+---------+--------------------------------------------+-----------------------------------------------------+-----+
-| d  | user    | write down weight                          | I can follow success in loosing weight              | |i| |
-+----+---------+--------------------------------------------+-----------------------------------------------------+-----+
-| e  | user    | display regimen log                        | I can see its result                                | |n| |
-+----+---------+--------------------------------------------+-----------------------------------------------------+-----+
-| f  | user    | input regimen log data via GUI             | I can have comfort while creating regimen log       | |n| |
-+----+---------+--------------------------------------------+-----------------------------------------------------+-----+
-
++-----+---------+--------------------------------------------+-----------------------------------------------------+
+|     | As a/an | I want to                                  | so that                                             |
++=====+=========+============================================+=====================================================+
+| |i| | user    | specify time period for keeping log        | I can divide diet program into smaller pieces       |
++-----+---------+--------------------------------------------+-----------------------------------------------------+
+| |i| | user    | write down notes about diet program course | I can use it as reference in future                 |
++-----+---------+--------------------------------------------+-----------------------------------------------------+
+| |i| | user    | specify name and description               | I can differentiate between different regiment logs |
++-----+---------+--------------------------------------------+-----------------------------------------------------+
+| |i| | user    | write down weight                          | I can follow success in loosing weight              |
++-----+---------+--------------------------------------------+-----------------------------------------------------+
+| x   | user    | display regimen log                        | I can see its result                                |
++-----+---------+--------------------------------------------+-----------------------------------------------------+
+| x   | user    | input regimen log data via GUI             | I can have comfort while creating regimen log       |
++-----+---------+--------------------------------------------+-----------------------------------------------------+
 
 
 
@@ -160,3 +159,5 @@ TODO
 .. |d| image:: done.png
 .. |n| image:: new.png
 .. |i| image:: inprogr.png
+.. |r| image:: trash.png
+
