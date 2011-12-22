@@ -1,0 +1,12 @@
+# data model
+source/RegimenLog.java
+source/RegimenLogTest.java
+
+# main program
+source/DietGuruData.java
+source/DietGuru.java
+source/DietGuruTest.java
+
+# gui components
+source/gui/RegimenLogDialog.java
+source/gui/guitest.java
