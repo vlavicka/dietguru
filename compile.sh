@@ -1,7 +1,8 @@
 #!/bin/bash
 
 export DESTINATION=${PWD}/_class
-export CLASSPATH=~/projects/junit4.8.2/junit-4.8.2.jar:~/projects/junit4.8.2:_class
+export JUNITVERSION=`ls ~/projects | sed -n -e "s/^junit\(.*\)$/\1/p"`
+export CLASSPATH=~/projects/junit${JUNITVERSION}/junit-${JUNITVERSION}.jar:~/projects/junit{$JUNITVERSION}:_class
 
 javac -d ${DESTINATION} source/*.java || { echo "Error while compiling"; exit 1; }
 
