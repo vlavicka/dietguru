@@ -11,7 +11,7 @@ for filename in `cat dependencies.txt | grep "^[^#].*$"`; do
     filenames="$filename $filenames"
 done
 
-javac -verbose -Xlint:deprecation -d ${DESTINATION} $filenames || { echo "Error while compiling"; exit 1; }
+javac -Xlint:deprecation -d ${DESTINATION} $filenames || { echo "Error while compiling"; exit 1; }
 
 if [ "$1" == "test" ]; then
     for file in source/*Test.java; do
